@@ -1,0 +1,34 @@
+# Configuration générale du plugin OneBlock
+plugin:
+  name: OneBlock
+  version: 1.0
+
+# Paramètres globaux
+settings:
+  debug: true                 # Activer/désactiver les messages de débogage
+  default-phase: 1            # Phase par défaut pour les nouveaux joueurs
+  tnt-explosions: false       # Activer/désactiver les explosions de TNT
+  teleport-to-island: true    # Téléporter les joueurs à leur île lors de la connexion
+
+# Gestion des défis
+challenges:
+  enabled: true               # Activer/désactiver les défis
+  notify-on-complete: true    # Notifier les joueurs lorsqu'un défi est complété
+
+# Messages personnalisables
+messages:
+  no-permission: "§cVous n'avez pas la permission d'exécuter cette commande."
+  island-reset: "§aVotre île a été réinitialisée avec succès !"
+  phase-advance: "§eFélicitations ! Vous avez atteint la phase %phase%."
+  challenge-completed: "§6Vous avez terminé le défi : %challenge%."
+  welcome-message: "§bBienvenue sur votre île OneBlock, %player% !"
+
+# Gestion des phases
+phases:
+  reset-on-complete: false    # Réinitialiser les phases après les avoir toutes complétées
+  max-phase: 10               # Phase maximale disponible
+
+# Paramètres avancés
+advanced:
+  save-interval: 300          # Intervalle de sauvegarde automatique (en secondes)
+  world-name: "oneblock_world" # Nom du monde principal pour OneBlock

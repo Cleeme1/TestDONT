@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>pom.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #080808; font-style: italic;}
+.s1 { color: #174ad4;}
+.s2 { color: #080808;}
+.s3 { color: #067d17;}
+.s4 { color: #0033b3;}
+.s5 { color: #080808;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+pom.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s2">&lt;</span><span class="s4">project </span><span class="s1">xmlns</span><span class="s3">=&quot;http://maven.apache.org/POM/4.0.0&quot;</span>
+         <span class="s1">xmlns:xsi</span><span class="s3">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+         <span class="s1">xsi:schemaLocation</span><span class="s3">=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">modelVersion</span><span class="s2">&gt;</span><span class="s5">4.0.0</span><span class="s2">&lt;/</span><span class="s4">modelVersion</span><span class="s2">&gt;</span>
+
+    <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">fr.oneblock</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">Oneblock</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">1.0</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">packaging</span><span class="s2">&gt;</span><span class="s5">jar</span><span class="s2">&lt;/</span><span class="s4">packaging</span><span class="s2">&gt;</span>
+
+    <span class="s2">&lt;</span><span class="s4">name</span><span class="s2">&gt;</span><span class="s5">Oneblock</span><span class="s2">&lt;/</span><span class="s4">name</span><span class="s2">&gt;</span>
+
+    <span class="s2">&lt;</span><span class="s4">properties</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">java.version</span><span class="s2">&gt;</span><span class="s5">21</span><span class="s2">&lt;/</span><span class="s4">java.version</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">project.build.sourceEncoding</span><span class="s2">&gt;</span><span class="s5">UTF-8</span><span class="s2">&lt;/</span><span class="s4">project.build.sourceEncoding</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s4">properties</span><span class="s2">&gt;</span>
+
+    <span class="s2">&lt;</span><span class="s4">build</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">defaultGoal</span><span class="s2">&gt;</span><span class="s5">clean package</span><span class="s2">&lt;/</span><span class="s4">defaultGoal</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">plugins</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">plugin</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.apache.maven.plugins</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">maven-compiler-plugin</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">3.13.0</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">configuration</span><span class="s2">&gt;</span>
+                    <span class="s2">&lt;</span><span class="s4">source</span><span class="s2">&gt;</span><span class="s5">${java.version}</span><span class="s2">&lt;/</span><span class="s4">source</span><span class="s2">&gt;</span>
+                    <span class="s2">&lt;</span><span class="s4">target</span><span class="s2">&gt;</span><span class="s5">${java.version}</span><span class="s2">&lt;/</span><span class="s4">target</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;/</span><span class="s4">configuration</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;/</span><span class="s4">plugin</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">plugin</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.apache.maven.plugins</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">maven-shade-plugin</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">3.5.3</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">executions</span><span class="s2">&gt;</span>
+                    <span class="s2">&lt;</span><span class="s4">execution</span><span class="s2">&gt;</span>
+                        <span class="s2">&lt;</span><span class="s4">phase</span><span class="s2">&gt;</span><span class="s5">package</span><span class="s2">&lt;/</span><span class="s4">phase</span><span class="s2">&gt;</span>
+                        <span class="s2">&lt;</span><span class="s4">goals</span><span class="s2">&gt;</span>
+                            <span class="s2">&lt;</span><span class="s4">goal</span><span class="s2">&gt;</span><span class="s5">shade</span><span class="s2">&lt;/</span><span class="s4">goal</span><span class="s2">&gt;</span>
+                        <span class="s2">&lt;/</span><span class="s4">goals</span><span class="s2">&gt;</span>
+                    <span class="s2">&lt;/</span><span class="s4">execution</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;/</span><span class="s4">executions</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;/</span><span class="s4">plugin</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">plugins</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">resources</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">resource</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">directory</span><span class="s2">&gt;</span><span class="s5">src/main/resources</span><span class="s2">&lt;/</span><span class="s4">directory</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">filtering</span><span class="s2">&gt;</span><span class="s5">true</span><span class="s2">&lt;/</span><span class="s4">filtering</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;/</span><span class="s4">resource</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">resources</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s4">build</span><span class="s2">&gt;</span>
+
+    <span class="s2">&lt;</span><span class="s4">repositories</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">repository</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">id</span><span class="s2">&gt;</span><span class="s5">papermc-repo</span><span class="s2">&lt;/</span><span class="s4">id</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">url</span><span class="s2">&gt;</span><span class="s5">https://repo.papermc.io/repository/maven-public/</span><span class="s2">&lt;/</span><span class="s4">url</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">repository</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">repository</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">id</span><span class="s2">&gt;</span><span class="s5">sonatype</span><span class="s2">&lt;/</span><span class="s4">id</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">url</span><span class="s2">&gt;</span><span class="s5">https://oss.sonatype.org/content/groups/public/</span><span class="s2">&lt;/</span><span class="s4">url</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">repository</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s4">repositories</span><span class="s2">&gt;</span>
+
+    <span class="s2">&lt;</span><span class="s4">dependencies</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">io.papermc.paper</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">paper-api</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">1.21-R0.1-SNAPSHOT</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">scope</span><span class="s2">&gt;</span><span class="s5">provided</span><span class="s2">&lt;/</span><span class="s4">scope</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s4">dependencies</span><span class="s2">&gt;</span>
+<span class="s2">&lt;/</span><span class="s4">project</span><span class="s2">&gt;</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,15 @@
+name: OneBlock
+version: 1.0
+main: fr.oneblock.OneBlockPlugin
+api-version: 1.19
+author: VotreNom
+description: Plugin OneBlock pour Minecraft
+commands:
+  oneblock:
+    description: Commande principale pour gérer OneBlock
+    usage: /oneblock [help|menu|stats|challenges|home|reload|setphase|reset]
+    aliases: [ob]
+permissions:
+  oneblock.admin:
+    description: Permet d'utiliser les commandes administratives
+    default: op

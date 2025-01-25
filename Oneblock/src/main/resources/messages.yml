@@ -1,0 +1,67 @@
+# Préfix pour tous les messages
+prefix: "&8[&bOneBlock&8] &7"
+
+# Messages généraux
+general:
+  welcome: "%prefix%&aBienvenue sur OneBlock, %player% !"
+  no-permission: "%prefix%&cVous n'avez pas la permission pour cette commande."
+  unknown-command: "%prefix%&cCommande inconnue. Utilisez /oneblock help pour plus d'informations."
+  action-cancelled: "%prefix%&cAction annulée."
+  command-error: "%prefix%&cUne erreur est survenue lors de l'exécution de la commande."
+
+# Gestion des îles
+island:
+  created: "%prefix%&aVotre île a été créée avec succès !"
+  teleported: "%prefix%&aVous avez été téléporté à votre île."
+  reset: "%prefix%&aVotre île a été réinitialisée avec succès !"
+  not-found: "%prefix%&cVous n'avez pas encore d'île. Utilisez /oneblock create pour commencer."
+  already-exists: "%prefix%&cVous avez déjà une île. Utilisez /oneblock home pour vous y rendre."
+
+# Gestion des phases
+phases:
+  advance: "%prefix%&aFélicitations ! Vous avez atteint la phase &e%phase%&a !"
+  max-reached: "%prefix%&cVous avez atteint la dernière phase disponible."
+  progress: "%prefix%&aProgrès de la phase : &e%progress%/%total% &7blocs."
+
+# Gestion des défis
+challenges:
+  started: "%prefix%&aVous avez commencé le défi : &e%challenge%&a."
+  progress: "%prefix%&aProgrès du défi &e%challenge%&a : &e%current%/%total%."
+  completed: "%prefix%&6Félicitations ! Vous avez terminé le défi : &e%challenge%&6."
+  reward: "%prefix%&aVous avez reçu une récompense pour le défi : &e%challenge%&a."
+
+# Statistiques des joueurs
+stats:
+  header: "&8========== &bStatistiques de %player% &8=========="
+  blocks-broken: "&bBlocs cassés : &e%blocks%"
+  mobs-killed: "&bMobs tués : &e%mobs%"
+  playtime: "&bTemps de jeu : &e%playtime%"
+  challenges-completed: "&bDéfis complétés : &e%challenges%"
+  highest-phase: "&bPhase la plus élevée atteinte : &e%phase%"
+  footer: "&8==================================="
+
+# Messages pour les administrateurs
+admin:
+  reload: "%prefix%&aLa configuration a été rechargée avec succès."
+  setphase: "%prefix%&aLa phase de &e%player%&a a été définie sur &e%phase%."
+  reset-island: "%prefix%&aL'île de &e%player%&a a été réinitialisée avec succès."
+  reset-error: "%prefix%&cImpossible de réinitialiser l'île de &e%player%."
+
+# Aide des commandes
+help:
+  header: "&8========== &bAide des commandes &8=========="
+  commands:
+    - "&e/oneblock &8- &7Ouvre le menu principal."
+    - "&e/oneblock help &8- &7Affiche cette aide."
+    - "&e/oneblock create &8- &7Crée une nouvelle île."
+    - "&e/oneblock home &8- &7Téléporte à votre île."
+    - "&e/oneblock reset &8- &7Réinitialise votre île."
+    - "&e/oneblock stats &8- &7Affiche vos statistiques."
+    - "&e/oneblock challenges &8- &7Affiche vos défis."
+  footer: "&8==================================="
+
+# Messages de débogage
+debug:
+  loading: "%prefix%&7Chargement des données pour %player%..."
+  saving: "%prefix%&7Sauvegarde des données pour %player%..."
+  island-location: "%prefix%&7Position de l'île : X=%x%, Y=%y%, Z=%z%."

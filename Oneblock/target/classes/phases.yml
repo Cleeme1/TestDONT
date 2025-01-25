@@ -1,0 +1,19 @@
+phases:
+  1:
+    name: "Plaines"
+    blocks:
+      - "GRASS_BLOCK"
+      - "DIRT"
+      - "STONE"
+    mobs:
+      - "COW"
+      - "CHICKEN"
+  2:
+    name: "Forêt"
+    blocks:
+      - "OAK_LOG"
+      - "OAK_LEAVES"
+      - "GRAVEL"
+    mobs:
+      - "WOLF"
+      - "SHEEP"

@@ -1,0 +1,25 @@
+phases:
+  1:
+    name: "Plaines"
+    blocks:
+      - "GRASS_BLOCK"
+      - "DIRT"
+      - "STONE"
+      - "OAK_LOG"
+      - "OAK_LEAVES"
+  2:
+    name: "Forêt"
+    blocks:
+      - "DIRT"
+      - "STONE"
+      - "OAK_LOG"
+      - "BIRCH_LOG"
+      - "GRAVEL"
+  3:
+    name: "Désert"
+    blocks:
+      - "SAND"
+      - "SANDSTONE"
+      - "CACTUS"
+      - "DEAD_BUSH"
+      - "STONE"
